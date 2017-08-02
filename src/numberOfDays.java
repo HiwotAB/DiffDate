@@ -12,11 +12,11 @@ public class numberOfDays {
         Scanner scan=new Scanner(System.in);
         
 
-        DateFormat df=new SimpleDateFormat("MM/dd//yyyy");
+        DateFormat df=new SimpleDateFormat("MMddyyyy");
         Date date =new Date();
 
         System.out.printf("Current Date"+ date);
-        System.out.println("Enter Your Date of birth :\"MM/dd//yyyy\" ");
+        System.out.println("\nEnter Your Date of birth :MMddyyyy ");
         String dateOfBirths=scan.nextLine();
         String today = df.format(date);
 
@@ -24,7 +24,7 @@ public class numberOfDays {
         Date dateC=df.parse(today);
         long difference=dateC.getTime()-dateB.getTime();
         long numberOfDays=difference/86400000;
-        System.out.printf("Number of days between date %s and %s is : %d %n",
+        System.out.println("Number of days between  "+
                 Math.abs(numberOfDays));
 
     }
