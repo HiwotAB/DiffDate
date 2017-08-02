@@ -9,8 +9,7 @@ public class numberOfDays {
 
     public static void main(String[] args) throws ParseException {
 
-        Scanner scan=new Scanner(System.in);
-        
+        Scanner scan=new Scanner(System.in);        
 
         DateFormat df=new SimpleDateFormat("MMddyyyy");
         Date date =new Date();
